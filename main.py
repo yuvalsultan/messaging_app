@@ -7,8 +7,24 @@ from functions import add_msg_to_stock, get_msg
 from functions import stock
 from flask import render_template
 
+# class Msg(Resource):
+#     def post(self):
+#         data = request.get_json()
+#         msg = get(data, 'msg', default='')
+#         sender = get(data, 'sender', default ='')
+#         recipient = get(data, 'recipient', default ='')
+#         add_msg_to_stock(stock, sender, recipient, msg)
+#
+#     def get(self):
+#         data = request.get_json()
+#         recipient = get(data, 'recipient', default='')
+#         messages = get_msg(stock, recipient)
+#         return messages
+
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'hjshjhdjahkjshkjdhjs'
+
 # api = Api(app)
 # api.add_resource(Msg, '/msg')
 
