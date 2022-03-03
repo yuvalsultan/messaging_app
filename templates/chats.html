@@ -1,0 +1,70 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<form method="POST">
+  <h3 align="center">Messaging App</h3>
+
+  <div class="form-group">
+    <label> Sender</label>
+    <input
+      type="text"
+      class="form-control"
+      id="sender"
+      name="sender"
+      placeholder="Enter sender"
+    />
+  </div>
+    <br>
+
+  <div class="form-group">
+    <label>Recipient</label>
+    <input
+      type="text"
+      class="form-control"
+      id="recipient"
+      name="recipient"
+      placeholder="Enter recipient"
+    />
+  </div>
+     <br>
+
+  <div class="form-group">
+    <label>Message</label>
+    <input
+      type="text"
+      class="form-control"
+      id="message"
+      name="message"
+      placeholder="Enter message"
+    />
+  </div>
+    <br>
+
+  <button type="submit" class="btn btn-primary" formmethod="post">Send</button>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+<div class="form-group">
+    <label>Recipient</label>
+    <input
+      type="text"
+      class="form-control"
+      id="getrecipient"
+      name="getrecipient"
+      placeholder="Enter recipient"
+    />
+  </div>
+  <br>
+    <button type="submit" class="btn btn-primary" formmethod="get" >Receive</button>
+  {%if messages%}
+    {%for i in messages%}
+    <p>{{i}}</p>
+    {%endfor%}
+  {%endif%}
+
+<br>
+  <br>
+</form>
+{% endblock %}
