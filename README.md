@@ -1,6 +1,7 @@
 # Messaging App 
 
 This messaging app is a restful application that allows people sending and receiving messages to one another.
+
 ![image](https://user-images.githubusercontent.com/46243822/156650802-33238219-d3a4-4f51-b822-6efcc7001963.png)
 
 ## Installation
