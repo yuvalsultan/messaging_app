@@ -1,65 +1,27 @@
 # Messaging App 
 
 This messaging app is a restful application that allows people sending and receiving messages to one another.
+![image](https://user-images.githubusercontent.com/46243822/156650700-1543241a-edb2-477d-8f46-25ac60174d7a.png)
 
-## Installation
-
-# Foobar
-
-Foobar is a Python library for dealing with word pluralization.
 
 ## Installation
 
 clone the reop
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
 ```bash
-git clone 
+git clone git@github.com:yuvalsultan/messaging_app.git
 ```
 
 ## Usage
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
-
-## Usage
-
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+The application works through post and get commands.
+Post request should include a messae, sender and recipient, and look like the following:
+{
+    "msg": "wuzup",
+    "sender": "Yuval",
+    "recipient":"Dana"
+}
+Get request should include the recipient alone.
+{
+    "recipient":"Dana"
+}
+Output of 
