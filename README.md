@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-The application works through post and get commands.
+The application works through post and get commands and includes a user interface on localhost weebpage when running the program.
 Post request should include a messae, sender and recipient, like the following:
 {
     "msg": "wuzup",
